@@ -26,9 +26,9 @@ function App() {
               <div className="repo-info">
                 <h1>{item.name}</h1>
                 <p>{item.description}</p>
-                <span>{item.stargazers_count}</span> |
-                <span>{item.open_issues}</span> |
                 <div className="repo-date">
+                  <span>{item.stargazers_count}</span> |
+                  <span>{item.open_issues}</span> |
                   <Moment fromNow>{item.created_at}</Moment>
                   <span> by {item.owner.login}</span>
                 </div>
