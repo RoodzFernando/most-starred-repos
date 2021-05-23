@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import Moment from "react-moment";
 import './App.css';
-
 function App() {
 
   const [repoData, setRepoData] = useState([])
@@ -27,7 +27,11 @@ function App() {
                 <h1>{item.name}</h1>
                 <p>{item.description}</p>
                 <span>{item.stargazers_count}</span> |
-                <span>{item.open_issues}</span>
+                <span>{item.open_issues}</span> |
+                <div className="repo-date">
+                  <Moment fromNow>{item.created_at}</Moment>
+                  <span> by {item.owner.login}</span>
+                </div>
               </div>
             </div>
           ))
