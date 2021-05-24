@@ -1,7 +1,7 @@
 import React from 'react'
 import Moment from "react-moment";
 
-const RepoInfo = ({ref, item}) => {
+const RepoInfo = ({item}) => {
   return (
     <div className="repo">
       <div className="repo-avatar">
@@ -11,8 +11,8 @@ const RepoInfo = ({ref, item}) => {
         <h1>{item.name}</h1>
         <p>{item.description}</p>
         <div className="repo-date">
-          <span>{item.stargazers_count}</span> |
-          <span>{item.open_issues}</span> |
+          <span className="card">Stars: {item.stargazers_count}</span>
+          <span className="card">Issues: {item.open_issues}</span>
           <Moment fromNow>{item.created_at}</Moment>
           <span> by {item.owner.login}</span>
         </div>
