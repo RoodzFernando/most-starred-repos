@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Padauk&display=swap');
+
+body, * {
+  margin: 0;
+  padding: 0;
+  font-family: 'Padauk', sans-serif;
+  font-size: 1.1rem;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #b7b7a4;
+  .title {
+    font-size: 2rem;
+  }
+}
+.repo {
+  box-shadow: 1px 1px 3px 1px #000;
+  display: flex;
+  width: 85%;
+  margin-bottom: 1.2rem;
+  background: #fff;
+  .repo-avatar {
+    img {
+      width: 150px;
+      height: 100%;
+    }
+  }
+  .repo-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1.2rem;
+    p {
+      margin: 15px 0 15px 0;
+    }
+    .repo-date {
+      .card {
+        margin-right: 20px;
+        padding: 4px;
+        border-radius: 3px;
+        &:first-child {
+          background: #2a9d8f;
+        }
+        &:nth-child(2) {
+          background: #e63946;
+        }
+      }
+      span {
+        &:last-child {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
