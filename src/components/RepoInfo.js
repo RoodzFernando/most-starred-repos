@@ -19,10 +19,14 @@ const RepoInfo = ({ item, lastElement }) => (
           Issues:
           {item.open_issues}
         </span>
-        <Moment fromNow>{item.created_at}</Moment>
         <span>
+          <Moment fromNow>{item.created_at}</Moment>
+          {' '}
           {' '}
           by
+          {' '}
+        </span>
+        <span>
           {item.owner.login}
         </span>
       </div>

@@ -18,13 +18,13 @@ body, * {
 .repo {
   box-shadow: 1px 1px 3px 1px #000;
   display: flex;
-  width: 80%;
+  width: 85%;
   margin-bottom: 1.2rem;
   background: #fff;
-  height: 150px;
   .repo-avatar {
     img {
       width: 150px;
+      height: 100%;
     }
   }
   .repo-info {
